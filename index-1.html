@@ -31,6 +31,9 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
     <script src="components/footer.js" defer></script>
+    <script src="components/topbar.js" defer></script>
+    
+    
 </head>
 
 <body>
@@ -41,28 +44,7 @@
     <!-- Spinner End -->
 
 
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark px-5 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>Santo Domingo, Republica Dominicana</small>
-                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+1(829)451-0641</small>
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>info@calipsodynamics.com</small>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center text-lg-end">
-                <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-twitter fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-facebook-f fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-linkedin-in fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2" href=""><i class="fab fa-instagram fw-normal"></i></a>
-                    <a class="btn btn-sm btn-outline-light btn-sm-square rounded-circle" href=""><i class="fab fa-youtube fw-normal"></i></a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Topbar End -->
+    <topbar-component></topbar-component>
 
     <!-- Navbar & Carousel Start -->
     <div class="container-fluid position-relative p-0">
@@ -77,9 +59,36 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
 
-                    <a href="index-1.html" class="nav-item nav-link">Inicio</a>
-                    <a href="about-1.html" class="nav-item nav-link">Nosotros</a>
-                    <a href="service-2.html" class="nav-item nav-link">Servicios</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Inicio</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="index-1.html" class="dropdown-item">Inicio 1</a>
+                            <a href="index-2.html" class="dropdown-item">Inicio 2</a>
+                        </div>
+                    </div>
+                                     
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Acerca de</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="about-1.html" class="dropdown-item">Acerca de 1</a>
+                            <a href="about-2.html" class="dropdown-item">Acerca de 2</a>
+                        </div>
+                    </div>                   
+
+                    
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Industrias</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="service-1.html" class="dropdown-item active">Cadena de suministros</a>
+                            <a href="service-1.html" class="dropdown-item">Ferreteria</a>
+                            <a href="service-2.html" class="dropdown-item">Repuestos</a>
+                            <a href="service-3.html" class="dropdown-item">Farmacia</a>
+                            <a href="service-detail.html" class="dropdown-item">Supermercados</a>
+                        </div>
+                    </div>
+
+
 
                     <a href="contact.html" class="nav-item nav-link">Contactenos</a>
                     <a href="contact.html" class="nav-item nav-link">Partner</a>
